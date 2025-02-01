@@ -37,39 +37,48 @@
 <body class="font-sora overflow-x-hidden">
     <!-- header section -->
      <header class="mb-28 bg-gradient-to-t from-secondary-color to-white relative">
-        <div class=" md:container mx-auto">
+        <div class="md:container mx-auto">
                <!-- navbar -->
-          <div class="navbar"> 
-            <div class="navbar-start">
-                <img src="./c2-assets/logo-header.png" alt="">
+            <nav class="flex justify-between pb-1 lg:mt-3 items-center border-b-black border lg:border-0 relative">
+            <div class="items-center">
+              <img class="visible lg:hidden pl-4" src="./c2-assets/Group.png" alt="">
+              <img class="hidden lg:block" src="./c2-assets/logo-header.png" alt="">
             </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1 ">
-                <li><a>Product</a></li>
-                <li><a>Service</a></li>
-                <li><a>Contact Us</a></li>
+            <div class="hidden lg:block">
+              <ul class="flex gap-5 text-xl text-text-color">
+                <li><a href="">Product</a></li>
+                <li><a href=""></a>Service</li>
+                <li><a href=""></a>Contact Us</li>
               </ul>
             </div>
-            <div class="navbar-end gap-2">
-              <i class="fa-light fa-magnifying-glass"></i>
-              <i class="fa-light fa-cart-shopping"></i>
-              
+            <div class="dropdown lg:hidden absolute right-4 ">
+              <div tabindex="0" role="button" class="btn m-1"><i class="fa-solid fa-bars"></i></div>
+              <ul tabindex="0" class="absolute right-4 dropdown-content menu bg-base-100 rounded-box z-[1] p-2 shadow">
+                <li><a href="">Product</a></li>
+                <li><a href=""></a>Service</li>
+                <li><a href=""></a>Contact Us</li>
+              </ul>
+            </div>
+            <div class="hidden lg:block space-x-2">
+              <i class="fa-solid fa-magnifying-glass text-primary-color text-2xl"></i>  
+              <i class="fa-solid fa-cart-shopping text-primary-color text-2xl"></i>
               <a class="btn bg-transparent text-primary-color border border-primary-color px-9">Login</a>
               <a class="btn bg-primary-color text-white px-9">Register</a>
             </div>
-          </div> 
-          <!-- banner section -->
-           <div class="mt-20">
+            </nav>
+
+            <!-- banner section -->
+            <div class="mt-20">
             <!-- text content -->
              <div class="text-center">
-                <h1 class=" text-3xl md:text-5xl font-semibold md:leading-normal">Freshness <span class="text-primary-color">You Can <br>Count</span> On, Prices You’ll Love!</h1>
+                <h1 class=" text-3xl md:text-5xl font-semibold md:leading-normal animate-pulse lg:animate-none">Freshness <span class="text-primary-color">You Can <br>Count</span> On, Prices You’ll Love!</h1>
                 <p class="text-text-color mt-4">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br>staples, we’ve got you covered every day!</p>
              </div>
              <!-- img content -->
               <figure class="flex justify-center mt-5">
                  <img  class="" src="./c2-assets/hero-vegetables.png" alt="">
               </figure>
-           </div>
+            </div>
         </div>
         <div class=" invisible lg:visible absolute lg:top-80 lg:left-80 lg:animate-[spin_1.5s_ease-in-out_infinite]">
           <img class="w-full " src="./c2-assets/image 43.png" alt="">
@@ -286,7 +295,7 @@
                </div>
              </div>
              <!-- 40% off -->
-             <div class="flex  bg-[#102861] rounded-lg p-6  justify-between">
+             <div class="lg:basis-2/5 flex  bg-[#102861] rounded-lg p-6  justify-between">
               <!-- text content -->
                <div class="items-self-center space-y-8 mt-8">
                  <img src="./c2-assets/india-gate-logo.png" alt="">
@@ -300,7 +309,10 @@
            </div>
            </section>
 
-          
+           <!-- extra section -->
+             <section class="md:container mx-auto mb-28">
+
+             </section>
 
            <!-- Get Grocery News section -->
             <section class="md:container mx-auto bg-secondary-color rounded-lg p-4 lg:p-12 -mb-56 relative z-10 ">
@@ -318,6 +330,8 @@
                   </div>
               </div>
             </section>
+
+
       </main>
       <!-- footer section -->
 
@@ -325,7 +339,7 @@
           <div class="container mx-auto flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0 px-4 mt-60">
             
             <!-- Logo and Description -->
-            <nav class="text-left max-w-xs">
+            <nav class="text-center max-w-xs">
               <img src="./c2-assets/logo-footer.png" alt="Logo" class="mx-auto md:mx-0">
               <p class="mt-2">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
             </nav>
